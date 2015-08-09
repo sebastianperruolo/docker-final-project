@@ -63,10 +63,10 @@ Por último es necesario inicializar la aplicación Apache por default. Puede ut
 Como servidor de base de datos, la aplicación utlliza ```MySQL``` en su versión ```5.6```. Para esto se debe utilizar una imagen existente y oficial. 
 La aplicación se conecta a la misma utilizando un sistema de configuración simple en archivo de texto plano llamado ```.env``` que lo podran encontrar en la raíz de la aplicación. La sección a configurar será la siguiente:
 ```
-DB_HOST=<host>
-DB_DATABASE=<database name>
-DB_USERNAME=<database user>
-DB_PASSWORD=<database password>
+DB_HOST=localhost
+DB_DATABASE=homestead
+DB_USERNAME=homestead
+DB_PASSWORD=secret
 ```
 Si piensa utilizar un sistema de virtualización como Docker y necesita reemplazar los valores anteriores por variables de entorno, esto es posible, tenga en cuenta el sigueinte ejemplo:
 ```

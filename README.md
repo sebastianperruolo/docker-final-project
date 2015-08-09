@@ -85,3 +85,6 @@ La URL utilizada para desarrollo es una simulación de su entorno productivo, po
 ```
 127.0.0.1     api.world.com.ar
 ```
+# Probando la instalación
+Si todo ha sido instalado correctamente podrá probar la aplicación mediante la siguiente URL: [http://api.world.com.ar/apidoc/](http://api.world.com.ar/apidoc/)
+

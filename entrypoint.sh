@@ -14,9 +14,9 @@ chmod -R g+rw /opt/www/worldapi/storage
 sleep 30
 
 #4 - Run database migration
-php /opt/www/worldapi/artisan migrate
+#php /opt/www/worldapi/artisan migrate
 
 #5 - Populate Country Table
-php /opt/www/worldapi/artisan db:seed --class=CountryTableSeeder
+#php /opt/www/worldapi/artisan db:seed --class=CountryTableSeeder
 
 exec "$@"

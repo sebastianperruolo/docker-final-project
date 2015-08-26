@@ -1,1 +1,18 @@
 #Please complete this file
+web:
+  build: .
+  ports:
+    - "8081:80"
+  volumes:
+    - ./worldapi:/opt/www/worldapi
+  links:
+    - db:mysql
+db:
+  image: mysql
+  volumes:
+    - ./mysql:/var/lib/mysql
+  environment:
+    MYSQL_ROOT_PASSWORD: 123456
+    MYSQL_DATABASE: dbdemo 
+    MYSQL_USER: devspark
+    MYSQL_PASSWORD: dev123
